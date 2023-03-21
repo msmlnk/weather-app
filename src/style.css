@@ -1,0 +1,159 @@
+body {
+  background-color: #cddddd;
+  font-family: "Work Sans", sans-serif;
+  overflow: hidden;
+}
+
+img {
+  width: 400px;
+  margin: 70px 70px;
+  display: block;
+}
+
+.WeatherInfo {
+  position: absolute;
+  top: 200px;
+  left: 750px;
+  line-height: 3;
+}
+
+h1 {
+  color: #003049;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #003049;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+h3 {
+  color: #003049;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+
+.WeatherInfo i {
+  font-size: 50px;
+}
+
+#temperature {
+  color: #003049;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.units {
+  color: #003049;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.AdditionalInfo {
+  position: fixed;
+  top: 330px;
+  left: 1130px;
+  line-height: 2;
+}
+
+.WeatherForecast {
+  margin: 0 auto;
+  padding-bottom: 50px;
+  text-align: center;
+  line-height: 4;
+}
+
+.WeatherForecast .forecast-time {
+  color: #003049;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.WeatherForecast .forecast-temperature {
+  color: #003049;
+  font-size: 18px;
+  font-style: bold;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.cloudy-icon {
+  color: #fef0d5;
+}
+
+.rain-icon,
+.cloudsun-icon,
+.cloud-icon {
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+  color: #fef0d5;
+}
+
+.container {
+  max-width: 1300px;
+  display: flex;
+  flex-direction: column;
+  background-color: #9fbfd0;
+  justify-content: center;
+  border: 1px solid;
+  border-color: transparent;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 2%;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.maincontainer {
+  margin: 20px 100px 50px 100px;
+}
+
+.app {
+  border-radius: 16px;
+}
+
+.btn {
+  background-color: #9fbfd0;
+  border: transparent;
+  box-shadow: rgba(196, 211, 222, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  margin: 5px;
+  width: 150px;
+  border-radius: 15px;
+}
+
+.btn:hover {
+  background-color: #003049;
+  color: #ffffff;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+.form-control {
+  max-width: 980px;
+  margin-right: 10px;
+  border-radius: 15px;
+}
+
+.searchfield {
+  display: flex;
+  justify-content: center;
+}
+
+#searchform {
+  margin-top: 20px;
+}
+
+.github {
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+}
