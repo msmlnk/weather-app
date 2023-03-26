@@ -81,7 +81,7 @@ function searchCity(city) {
     axios.get(apiUrl).then(displayWeather);
 }
 
-searchCity("New York");
+searchCity("Tbilisi");
 
 let searchForm = document.querySelector("#searchform");
 searchForm.addEventListener("submit", search);
