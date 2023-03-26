@@ -69,12 +69,19 @@ function getCurrentLocation(event) {
 }
 
 function search(event) {
-  event.preventDefault();
-  let apiKey = "5354b60afda2b7800186c06153932396";
-  let city = document.querySelector("#city-input").value;
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(displayWeather);
+    event.preventDefault();
+    let city = document.querySelector("#city-input").value;
+
+    searchCity(city);
 }
+
+function searchCity(city) {
+    let apiKey = "5354b60afda2b7800186c06153932396";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(displayWeather);
+}
+
+searchCity("New York");
 
 let searchForm = document.querySelector("#searchform");
 searchForm.addEventListener("submit", search);
